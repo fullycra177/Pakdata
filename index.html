@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - SIM Data Terminal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="terminal">
+    <h1>LOGIN REQUIRED</h1>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">🔐 LOGIN</button>
+
+    <p class="desc">
+      ❗ For access, please contact the developer on WhatsApp<br><br>
+      👨‍💻 <strong>Developer:</strong> Ehtisham<br>
+      📱 <strong>WhatsApp:</strong>
+      <a href="https://wa.me/923285809899" target="_blank" style="color: #00ff00; text-decoration: underline;">
+        +923285809899
+      </a>
+    </p>
+  </div>
+
+  <script>
+    function login() {
+      const user = document.getElementById('username').value;
+      const pass = document.getElementById('password').value;
+      if (user === 'Malik786' && pass === 'Malik123') {
+        window.location.href = 'home.html';
+      } else {
+        alert('Invalid login!');
+      }
+    }
+  </script>
+</body>
+</html>
